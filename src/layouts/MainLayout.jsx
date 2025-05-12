@@ -86,7 +86,7 @@ const MainLayout = ({ children }) => {
   return (
     <ThemeContext.Provider value={{ darkMode }}>
       <div className={`min-h-screen font-sans ${darkMode ? 'dark' : ''}`}>
-        <div className="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 min-h-screen">
+        <div className="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 min-h-screen flex flex-col">
         {/* Animated Header Design with Light/Dark Mode Support */}
         <header className={`sticky top-0 z-50 transition-all duration-300 ${
           scrolled
@@ -263,7 +263,7 @@ const MainLayout = ({ children }) => {
         </header>
 
         {/* Page Content with enhanced background and animations - Optimized for tablet portrait */}
-        <main className="container mx-auto px-3 xs:px-4 py-6 xs:py-8 relative overflow-hidden">
+        <main className="container mx-auto px-3 xs:px-4 py-6 xs:py-8 pb-0 relative overflow-hidden flex-grow">
           <div className="absolute inset-0 bg-grid-pattern opacity-5 pointer-events-none animate-fadeIn"></div>
 
           {/* Animated background elements - Adjusted for better tablet portrait display */}
@@ -281,7 +281,7 @@ const MainLayout = ({ children }) => {
         </main>
 
         {/* Modern Minimalist Footer with Light/Dark Mode Support */}
-        <footer className="relative mt-20 overflow-hidden">
+        <footer className="relative mt-0 overflow-hidden border-t border-blue-500/10 dark:border-blue-500/10">
           {/* Gradient top border */}
           <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-blue-500/50 to-transparent"></div>
 
