@@ -516,3 +516,149 @@ html {
     bottom: 0.5rem !important;
   }
 }
+
+/* New advanced animations */
+@keyframes floatX {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+}
+
+@keyframes floatXY {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(5px, -5px);
+  }
+  50% {
+    transform: translate(10px, 0);
+  }
+  75% {
+    transform: translate(5px, 5px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes rotate-3d {
+  0% {
+    transform: perspective(1000px) rotateX(0) rotateY(0);
+  }
+  50% {
+    transform: perspective(1000px) rotateX(5deg) rotateY(5deg);
+  }
+  100% {
+    transform: perspective(1000px) rotateX(0) rotateY(0);
+  }
+}
+
+@keyframes morph {
+  0%, 100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+  25% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+  }
+  50% {
+    border-radius: 50% 60% 30% 60% / 40% 50% 60% 50%;
+  }
+  75% {
+    border-radius: 60% 40% 50% 40% / 30% 50% 60% 70%;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 5px 0 rgba(59, 130, 246, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px 5px rgba(59, 130, 246, 0.8);
+  }
+}
+
+@keyframes tilt {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(2deg);
+  }
+  75% {
+    transform: rotate(-2deg);
+  }
+}
+
+/* Animation utility classes */
+.animate-floatX {
+  animation: floatX 6s ease-in-out infinite;
+}
+
+.animate-floatXY {
+  animation: floatXY 8s ease-in-out infinite;
+}
+
+.animate-rotate-3d {
+  animation: rotate-3d 7s ease-in-out infinite;
+}
+
+.animate-morph {
+  animation: morph 8s ease-in-out infinite;
+}
+
+.animate-shimmer {
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  background-size: 200% 100%;
+  animation: shimmer 3s infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 3s infinite;
+}
+
+.animate-tilt {
+  animation: tilt 5s ease-in-out infinite;
+}
+
+/* Mouse follow effect */
+.mouse-follow {
+  transition: transform 0.2s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+/* 3D card effect */
+.card-3d {
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.card-3d-content {
+  transition: transform 0.5s ease;
+}
+
+/* Parallax effect */
+.parallax-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.parallax-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.1s ease-out;
+}

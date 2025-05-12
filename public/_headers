@@ -1,0 +1,28 @@
+# Headers for all files
+/*
+  X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: no-referrer-when-downgrade
+
+# JavaScript files
+/*.js
+  Content-Type: text/javascript
+
+/assets/*.js
+  Content-Type: text/javascript
+
+# JavaScript module files
+/*.mjs
+  Content-Type: text/javascript
+
+/assets/*.mjs
+  Content-Type: text/javascript
+
+# JavaScript source maps
+/*.js.map
+  Content-Type: application/json
+
+# CSS files
+/*.css
+  Content-Type: text/css
