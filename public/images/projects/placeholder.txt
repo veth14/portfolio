@@ -1,0 +1,9 @@
+This is a placeholder file. You should replace this with an actual screenshot of your SaleMate project.
+
+To get a screenshot:
+1. Visit your SaleMate website at https://salemate.netlify.app/
+2. Take a screenshot (use Windows key + Shift + S on Windows)
+3. Save the screenshot as "salemate.jpg" in this folder
+4. Delete this placeholder file
+
+The image should be in a 16:9 or 4:3 aspect ratio for best results in the portfolio layout.
