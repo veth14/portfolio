@@ -150,6 +150,9 @@ const MainLayout = ({ children }) => {
                   <NavLink to="/projects" className="px-3 xs:px-4 sm:px-5 py-1.5 xs:py-2 rounded-lg flex items-center font-medium text-sm xs:text-base nav-item-animation" style={{ animationDelay: '300ms' }}>
                     <i className="fas fa-code mr-2 xs:mr-2.5 transition-transform duration-300"></i> Projects
                   </NavLink>
+                  <NavLink to="/certificates" className="px-3 xs:px-4 sm:px-5 py-1.5 xs:py-2 rounded-lg flex items-center font-medium text-sm xs:text-base nav-item-animation" style={{ animationDelay: '350ms' }}>
+                    <i className="fas fa-certificate mr-2 xs:mr-2.5 transition-transform duration-300"></i> Certificates
+                  </NavLink>
                   <NavLink to="/contact" className="px-3 xs:px-4 sm:px-5 py-1.5 xs:py-2 rounded-lg flex items-center font-medium text-sm xs:text-base nav-item-animation" style={{ animationDelay: '400ms' }}>
                     <i className="fas fa-envelope mr-2 xs:mr-2.5 transition-transform duration-300"></i> Contact
                   </NavLink>
@@ -248,11 +251,21 @@ const MainLayout = ({ children }) => {
                   <span className="font-medium text-sm xs:text-base">Projects</span>
                 </NavLink>
                 <NavLink
-                  to="/contact"
+                  to="/certificates"
                   className={`px-4 xs:px-5 py-3 xs:py-4 rounded-lg flex items-center transform transition-all duration-500 hover:translate-x-2 bg-white/5 backdrop-blur-sm ${
                     isMenuOpen ? 'translate-x-0 opacity-100' : '-translate-x-10 opacity-0'
                   }`}
                   style={{ transitionDelay: isMenuOpen ? '250ms' : '0ms' }}
+                >
+                  <i className="fas fa-certificate mr-2 xs:mr-3 text-blue-400 text-base xs:text-lg"></i>
+                  <span className="font-medium text-sm xs:text-base">Certificates</span>
+                </NavLink>
+                <NavLink
+                  to="/contact"
+                  className={`px-4 xs:px-5 py-3 xs:py-4 rounded-lg flex items-center transform transition-all duration-500 hover:translate-x-2 bg-white/5 backdrop-blur-sm ${
+                    isMenuOpen ? 'translate-x-0 opacity-100' : '-translate-x-10 opacity-0'
+                  }`}
+                  style={{ transitionDelay: isMenuOpen ? '300ms' : '0ms' }}
                 >
                   <i className="fas fa-envelope mr-2 xs:mr-3 text-blue-400 text-base xs:text-lg"></i>
                   <span className="font-medium text-sm xs:text-base">Contact</span>
@@ -321,6 +334,7 @@ const MainLayout = ({ children }) => {
                   <Link to="/" className={`${darkMode ? 'text-gray-400 hover:text-blue-400' : 'text-gray-600 hover:text-blue-600'} transition-colors duration-200 text-xs xs:text-xs sm:text-sm`}>Home</Link>
                   <Link to="/about" className={`${darkMode ? 'text-gray-400 hover:text-blue-400' : 'text-gray-600 hover:text-blue-600'} transition-colors duration-200 text-xs xs:text-xs sm:text-sm`}>About</Link>
                   <Link to="/projects" className={`${darkMode ? 'text-gray-400 hover:text-blue-400' : 'text-gray-600 hover:text-blue-600'} transition-colors duration-200 text-xs xs:text-xs sm:text-sm`}>Projects</Link>
+                  <Link to="/certificates" className={`${darkMode ? 'text-gray-400 hover:text-blue-400' : 'text-gray-600 hover:text-blue-600'} transition-colors duration-200 text-xs xs:text-xs sm:text-sm`}>Certificates</Link>
                   <Link to="/contact" className={`${darkMode ? 'text-gray-400 hover:text-blue-400' : 'text-gray-600 hover:text-blue-600'} transition-colors duration-200 text-xs xs:text-xs sm:text-sm`}>Contact</Link>
                 </div>
               </div>
