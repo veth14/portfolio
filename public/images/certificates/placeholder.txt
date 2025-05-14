@@ -1,0 +1,11 @@
+This directory will contain certificate images. 
+You should add your actual certificate images here with filenames matching those referenced in the CertificatesPage.jsx file:
+
+- web-dev.jpg
+- react.jpg
+- design.jpg
+- javascript.jpg
+- career.jpg
+- tailwind.jpg
+
+Or update the image paths in the CertificatesPage.jsx file to match your actual image filenames.
